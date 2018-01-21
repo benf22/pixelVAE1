@@ -6,7 +6,7 @@ Ishaan Gulrajani, Kundan Kumar, Faruk Ahmed, Adrien Ali Taiga, Francesco Visin, 
 import os, sys
 sys.path.append(os.getcwd())
 
-N_GPUS = 2# 4
+N_GPUS = 1# 2 # NIR COMMENT
 
 try: # This only matters on Ishaan's computer
     import experiment_tools
