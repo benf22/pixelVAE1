@@ -181,7 +181,7 @@ def train_loop(
             print ("saver.save time: {}".format(time.time() - start_time))
 
             start_time = time.time()
-            with open(TRAIN_LOOP_FILE, 'w') as f: #'wb'
+            with open(TRAIN_LOOP_FILE, 'wb') as f: #'wb'
                 pickle.dump(_vars, f)
             print ("_vars pickle dump time: {}".format(time.time() - start_time))
 
