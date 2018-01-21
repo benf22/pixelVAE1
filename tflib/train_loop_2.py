@@ -13,9 +13,9 @@ import shutil
 
 locale.setlocale(locale.LC_ALL, '')
 
-PARAMS_FILE       = os.path.join(os.getcwd(),'/params.ckpt')
-TRAIN_LOOP_FILE   = os.path.join(os.getcwd(),'/train_loop.pkl')
-TRAIN_OUTPUT_FILE = os.path.join(os.getcwd(),'/train_output.ndjson')
+PARAMS_FILE       = os.path.join(os.getcwd(),'params.ckpt')
+TRAIN_LOOP_FILE   = os.path.join(os.getcwd(),'train_loop.pkl')
+TRAIN_OUTPUT_FILE = os.path.join(os.getcwd(),'train_output.ndjson')
 
 print(PARAMS_FILE)
 print(TRAIN_LOOP_FILE)
