@@ -12,10 +12,10 @@ import time
 import shutil
 
 locale.setlocale(locale.LC_ALL, '')
-
-PARAMS_FILE       = os.path.join(os.getcwd(),'params.ckpt')
-TRAIN_LOOP_FILE   = os.path.join(os.getcwd(),'train_loop.pkl')
-TRAIN_OUTPUT_FILE = os.path.join(os.getcwd(),'train_output.ndjson')
+fldr = 'imagenet64_small'
+PARAMS_FILE       = os.path.join(os.getcwd(),fldr,'params.ckpt')
+TRAIN_LOOP_FILE   = os.path.join(os.getcwd(),fldr,'train_loop.pkl')
+TRAIN_OUTPUT_FILE = os.path.join(os.getcwd(),fldr,'train_output.ndjson')
 
 print(PARAMS_FILE)
 print(TRAIN_LOOP_FILE)
@@ -36,7 +36,7 @@ def train_loop(
     bn_stats_iters=1000,
     before_test=None,
     optimizer=tf.train.AdamOptimizer(),
-    save_every=1000,
+    save_every=500,
     save_checkpoints=False
     ):
 
