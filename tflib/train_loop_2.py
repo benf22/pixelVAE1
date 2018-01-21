@@ -17,6 +17,9 @@ PARAMS_FILE       = os.path.join(os.getcwd(),'/params.ckpt')
 TRAIN_LOOP_FILE   = os.path.join(os.getcwd(),'/train_loop.pkl')
 TRAIN_OUTPUT_FILE = os.path.join(os.getcwd(),'/train_output.ndjson')
 
+print(PARAMS_FILE)
+print(TRAIN_LOOP_FILE)
+print(TRAIN_OUTPUT_FILE)
 def train_loop(
     session,
     inputs,
