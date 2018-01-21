@@ -72,7 +72,7 @@ if SETTINGS == 'mnist_256':
 
     TIMES = {
         'test_every': 2*500, #2*500,
-        'stop_after': 500*500, #500*500,
+        'stop_after': 50, #500*500,
         'callback_every': 10*500, #10*500
     }
 

@@ -129,7 +129,7 @@ def train_loop(
         print ("Resuming interrupted train loop session")
         with open(TRAIN_LOOP_FILE, 'rb') as f:
             _vars = pickle.load(f)
-        saver.restore(session, os.getcwd()+"/"+PARAMS_FILE)
+        saver.restore(session, PARAMS_FILE)
 
         print ("Fast-fowarding dataset generator")
         dataset_iters = 0
