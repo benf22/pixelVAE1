@@ -59,10 +59,10 @@ if SETTINGS == 'mnist_256':
     DIM_4        = 64
     LATENT_DIM_2 = 128
 
-    ALPHA1_ITERS = 2#5000
-    ALPHA2_ITERS = 2#5000
+    ALPHA1_ITERS = 5000#5000
+    ALPHA2_ITERS = 5000#5000
     KL_PENALTY = 1.0
-    BETA_ITERS = 2#1000
+    BETA_ITERS = 1000#1000
 
     # In Dec2, we break each spatial location into N blocks (analogous to channels
     # in the original PixelCNN) and model each spatial location autoregressively
@@ -71,9 +71,9 @@ if SETTINGS == 'mnist_256':
     PIX_2_N_BLOCKS = 1
 
     TIMES = {
-        'test_every': 4, #2*500,
-        'stop_after': 16, #500*500,
-        'callback_every': 8, #10*500
+        'test_every': 2*500, #2*500,
+        'stop_after': 500*500, #500*500,
+        'callback_every': 10*500, #10*500
     }
 
     LR = 1e-3
@@ -81,7 +81,7 @@ if SETTINGS == 'mnist_256':
     LR_DECAY_AFTER = TIMES['stop_after']
     LR_DECAY_FACTOR = 1.
 
-    BATCH_SIZE = 10 #100
+    BATCH_SIZE = 100 #100
     N_CHANNELS = 1
     HEIGHT = 28
     WIDTH = 28
